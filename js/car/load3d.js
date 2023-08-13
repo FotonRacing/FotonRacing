@@ -60,7 +60,7 @@ if (window.screen.width < 900) {
         div2.appendChild(renderer.domElement);
 
         let loader = new THREE.GLTFLoader();
-        loader.load('img/car/vehicle.gltf', function(gltf){
+        loader.load('https://fotonracing.github.io/img/car/vehicle.gltf', function(gltf){
           car = gltf.scene.children[6];
           ambient = gltf.scene.children[0]
           ambient.scale.set(0.5,0.5,0.5);
