@@ -55,13 +55,13 @@ if (window.screen.width < 900) {
         renderer = new THREE.WebGLRenderer({antialias:true});
         renderer.setSize(500,500);
         if (window.screen.width >900) {
-          const div = document.getElementById("model")
+          console.log('desktop')
+          document.getElementById("model").appendChild(renderer.domElement);
         } else {
-          const div = document.getElementById("model2")
+          console.log('smartphone')
+          document.getElementById("model2").appendChild(renderer.domElement);
         }
         
-
-        div.appendChild(renderer.domElement);
 
         let loader = new THREE.GLTFLoader();
         loader.load('https://fotonracing.github.io/img/car/vehicle.gltf', function(gltf){
