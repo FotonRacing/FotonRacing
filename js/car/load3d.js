@@ -61,6 +61,7 @@ if (window.screen.width < 900) {
 
         let loader = new THREE.GLTFLoader();
         loader.load('https://fotonracing.github.io/img/car/vehicle.gltf', function(gltf){
+          console.log('first step')
           car = gltf.scene.children[6];
           ambient = gltf.scene.children[0]
           ambient.scale.set(0.5,0.5,0.5);
@@ -77,7 +78,9 @@ if (window.screen.width < 900) {
         });
       }
       function animate() {
+        console.log('second step')
         renderer.render(scene,camera);
+        console.log('last step')
       }
       init();
 
