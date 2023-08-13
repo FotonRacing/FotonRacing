@@ -1,0 +1,291 @@
+* {
+    --white: #b6b5b5;
+    --deep_orange: #f05012;
+    --red_like: #f8231f;
+    --our_black: #09080b;
+    --weak_orange: #f17e54;
+    font-family: inherit;
+}
+@media screen and (max-width: 1920px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        font-family: 'normal';
+        overflow: hidden;
+        background-color: var(--our_black);
+    }
+    .wrapper {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        word-break: keep-all;
+    }
+    h1 {
+        position: absolute;
+        z-index: 999;
+        font-size: 12vh;
+        width: 100%;
+        color: var(--red_like);
+        font-family: 'special';
+        text-align: center;
+    }
+    h2 {
+        position: absolute;
+        bottom: 15vh;
+        padding: 15px;
+        text-align: center;
+        color: var(--white);
+        background: var(--red_like);
+        transform: translateX(-50%);
+        z-index: 999;
+    }
+    .h2-team {
+        left: 16.5%
+    }
+    .h2-car {
+        left: 50%;
+    }
+    .h2-sponsors {
+        left: 82.5%;
+    }
+    .holder {
+        width: 37%;
+        height: 100vh;
+        overflow: hidden;
+        position: absolute;
+        transition: all .3s ease-in-out;
+        filter: blur(3px) grayscale(80%);
+    }
+    .holder img {
+        height: 100%;
+        margin-left: 50% !important;
+        transition: all .3s ease-in-out;
+        transform: translateX(-50%);
+    }
+    #holder1 {
+        clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+        left: 0;
+        z-index: 999;
+    }
+    #holder1 img {
+        width: 120% !important;
+        height: auto !important;
+    }
+    #holder2 {
+        clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+        left: 33.3%;
+        transition: all .3s ease-in-out;
+    }
+    #holder2 img {
+        margin-left: 50% !important;
+        transition: all .3s ease-in-out;
+        backdrop-filter: grayscale(100%);
+        transform: translateX(-50%);
+    }
+    #holder3 {
+        clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+        left: 66.6%;
+        width: 33.4% !important;
+        transition: all .3s ease-in-out;
+    }
+    .holder:hover {
+        filter: none
+    }
+    .holder:hover img {
+        height: 110%;
+        margin-top: -10%;
+        margin-left: -30%;
+    }
+}
+@media screen and (min-width: 2000px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        font-family: 'normal';
+        overflow: hidden;
+        background-color: var(--our_black);
+    }
+    .wrapper {
+        width: 1920px;
+        height: 100vh;
+        position: relative;
+        word-break: keep-all;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    h1 {
+        position: absolute;
+        z-index: 999;
+        font-size: 12vh;
+        width: 100%;
+        color: var(--red_like);
+        font-family: 'special';
+        text-align: center;
+    }
+    h2 {
+        position: absolute;
+        bottom: 15vh;
+        padding: 15px;
+        text-align: center;
+        color: var(--white);
+        background: var(--red_like);
+        transform: translateX(-50%);
+        z-index: 999;
+    }
+    .h2-team {
+        left: 16.5%
+    }
+    .h2-car {
+        left: 50%;
+    }
+    .h2-sponsors {
+        left: 82.5%;
+    }
+    .holder {
+        width: 37%;
+        height: 100vh;
+        overflow: hidden;
+        position: absolute;
+        transition: all .3s ease-in-out;
+        filter: blur(3px) grayscale(80%);
+    }
+    .holder img {
+        height: 100%;
+        margin-left: 50% !important;
+        transition: all .3s ease-in-out;
+        transform: translateX(-50%);
+    }
+    #holder1 {
+        clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+        left: 0;
+        z-index: 999;
+    }
+    #holder2 {
+        clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+        left: 33.3%;
+        transition: all .3s ease-in-out;
+    }
+    #holder2 img {
+        margin-left: 50% !important;
+        transition: all .3s ease-in-out;
+        backdrop-filter: grayscale(100%);
+        transform: translateX(-50%);
+    }
+    #holder3 {
+        clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+        left: 66.6%;
+        width: 33.4% !important;
+        transition: all .3s ease-in-out;
+    }
+    .holder:hover {
+        filter: none
+    }
+    .holder:hover img {
+        height: 110%;
+        margin-top: -10%;
+        margin-left: -30%;
+    }
+}
+@media screen and (max-width: 900px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        font-family: 'normal';
+        overflow: hidden;
+        background-color: var(--our_black);
+    }
+    .wrapper {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        word-break: keep-all;
+    }
+    h1 {
+        position: absolute;
+        z-index: 999;
+        font-size: 6vh;
+        width: 100%;
+        color: var(--red_like);
+        font-family: 'special';
+        text-align: center;
+    }
+    h2 {
+        position: absolute;
+        padding: 15px;
+        text-align: center;
+        color: var(--white);
+        background: var(--red_like);
+        transform: translateX(-50%);
+        z-index: 999;
+        line-height: 3vh;
+    }
+    .h2-team {
+        left: 50%;
+        top: 16.5%;
+        height: 3vh
+    }
+    .h2-car {
+        top: 50%;
+        height: 3vh;
+        left: 50%;
+    }
+    .h2-sponsors {
+        top: 82.5%;
+        height: 3vh;
+        left: 50%;
+    }
+    .holder {
+        width: 100%;
+        height: 37%;
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        transition: all .3s ease-in-out;
+        filter: blur(3px) grayscale(80%);
+        overflow: hidden;
+    }
+    .holder img {
+        width: 100%;
+        margin-left: 50% !important;
+        transition: all .3s ease-in-out;
+        transform: translateX(-50%);
+    }
+    #holder1 {
+        top: 0;
+        left: 0;
+        z-index: 999;
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    }
+    #holder1 img {
+        height: auto !important;
+        margin-top: -20%
+    }
+    #holder2 {
+        top: 33.3%;
+        left: 0;
+        transition: all .3s ease-in-out;
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+    }
+    #holder2 img {
+        margin-left: 50% !important;
+        transition: all .3s ease-in-out;
+        backdrop-filter: grayscale(100%);
+        transform: translateX(-50%);
+        height: 120%;
+    }
+    #holder3 {
+        top: 66.6%;
+        left: 0;
+        width: 100% !important;
+        transition: all .3s ease-in-out;
+        clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+    }
+    .holder:hover {
+        filter: none
+    }
+    .holder:hover img {
+        height: 110%;
+        margin-top: -10% !important;
+        margin-left: -30%;
+    }
+}
